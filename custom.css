@@ -1,0 +1,20 @@
+.gallery {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  overflow: hidden;
+  background: #f989d2;
+  position: relative;
+}
+
+.lightbox img {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding-bottom: 50px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
+}

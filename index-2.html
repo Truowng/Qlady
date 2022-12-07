@@ -28,6 +28,12 @@
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800"
     />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <!-- Flaticon -->
@@ -43,6 +49,9 @@
     <link rel="stylesheet" href="css/main.css" />
     <!-- Colors Css -->
     <link rel="stylesheet" href="css/colors/theme_color_2.css" />
+    <!-- Lightbox Css -->
+    <link rel="stylesheet" href="css/tobii.min.css" />
+    <link rel="stylesheet" href="custom.css" />
 
     <!--[if lt IE 9]>
       <script src="js/html5shiv.min.js"></script>
@@ -1199,6 +1208,109 @@
     </section>
 
     <!-- ========== End Testimonials ========== -->
+    <!-- ========== Start Gallery ========== -->
+
+    <section id="gallery" class="testimonials">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                type="a"
+                data-type="youtube"
+                data-id="oNj0u8jnxpM"
+                data-height="600"
+                data-controls="1"
+                class="lightbox"
+              >
+                <img src="./images/gallery/image-1.jpg" alt="" />
+              </a>
+              <div
+                class="client-details d-flex flex-column align-items-center mt-2"
+              >
+                <h6 class="">Ms Kim Cúc</h6>
+                <p class="mb-0" style="color: #fff">Giám đốc KV HCM</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a
+                type="a"
+                data-type="youtube"
+                data-id="oNj0u8jnxpM"
+                data-height="600"
+                data-controls="1"
+                class="lightbox"
+              >
+                <img src="./images/gallery/image-1.jpg" alt="" />
+              </a>
+              <div
+                class="client-details d-flex flex-column align-items-center mt-2"
+              >
+                <h6 class="">Ms Kim Cúc</h6>
+                <p class="mb-0" style="color: #fff">Giám đốc KV HCM</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a
+                type="a"
+                data-type="youtube"
+                data-id="oNj0u8jnxpM"
+                data-height="600"
+                data-controls="1"
+                class="lightbox"
+              >
+                <img src="./images/gallery/image-1.jpg" alt="" />
+              </a>
+              <div
+                class="client-details d-flex flex-column align-items-center mt-2"
+              >
+                <h6 class="">Ms Kim Cúc</h6>
+                <p class="mb-0" style="color: #fff">Giám đốc KV HCM</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a
+                type="a"
+                data-type="youtube"
+                data-id="oNj0u8jnxpM"
+                data-height="600"
+                data-controls="1"
+                class="lightbox"
+              >
+                <img src="./images/gallery/image-1.jpg" alt="" />
+              </a>
+              <div
+                class="client-details d-flex flex-column align-items-center mt-2"
+              >
+                <h6 class="">Ms Kim Cúc</h6>
+                <p class="mb-0" style="color: #fff">Giám đốc KV HCM</p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a
+                type="a"
+                data-type="youtube"
+                data-id="oNj0u8jnxpM"
+                data-height="600"
+                data-controls="1"
+                class="lightbox"
+              >
+                <img src="./images/gallery/image-1.jpg" alt="" />
+              </a>
+              <div
+                class="client-details d-flex flex-column align-items-center mt-2"
+              >
+                <h6 class="">Ms Kim Cúc</h6>
+                <p class="mb-0" style="color: #fff">Giám đốc KV HCM</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== End Gallery ========== -->
 
     <!-- ========== Start Blog ========== -->
 
@@ -1495,6 +1607,11 @@
       src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Lightbox Js  -->
+    <script src="js/tobii.min.js"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
     <!-- Popper Js  -->
     <script src="js/popper.min.js"></script>
     <!-- Bootstrap 4 Js -->
@@ -1508,5 +1625,18 @@
     <script src="js/wow.min.js"></script>
     <!-- Custom Js -->
     <script src="js/custom.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      const tobii = new Tobii();
+    </script>
   </body>
 </html>
